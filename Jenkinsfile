@@ -1,7 +1,5 @@
 pipeline {
-    
    agent any
-    
    stages {
         stage("checkout") {
             steps {
@@ -9,7 +7,7 @@ pipeline {
             }
             
          }
-   
+
         stage("build") {
             steps {
                 sh "./mvnw package"
